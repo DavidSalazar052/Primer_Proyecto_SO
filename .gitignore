@@ -1,0 +1,6 @@
+bin/terminal_carga
+logs/*.log
+*.o
+a.out
+.vscode/
+*~
