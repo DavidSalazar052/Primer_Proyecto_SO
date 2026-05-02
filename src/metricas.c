@@ -18,7 +18,7 @@ void imprimir_resultados(Camion camiones[]) {
 
     calcular_metricas(camiones);
 
-    printf("\n================ RESULTADOS FIFO ================\n");
+    printf("\n================ Resultados FIFO ================\n");
     printf("%-8s %-8s %-12s %-12s %-12s %-12s\n",
            "Camion", "Burst", "Inicio", "Fin", "Espera", "Retorno");
     printf("-------------------------------------------------------------\n");
@@ -39,5 +39,5 @@ void imprimir_resultados(Camion camiones[]) {
     printf("-------------------------------------------------------------\n");
     printf("Espera promedio:  %.2f segundos\n", suma_espera / NUM_CAMIONES);
     printf("Retorno promedio: %.2f segundos\n", suma_retorno / NUM_CAMIONES);
-    printf("=================================================\n");
+    printf("-------------------------------------------------------------\n");
 }

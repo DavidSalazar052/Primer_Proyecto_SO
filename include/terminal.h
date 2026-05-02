@@ -31,6 +31,6 @@ typedef struct {
     double retorno;
 } Camion;
 
-void ejecutar_fifo_terminal(void);
+void ejecutar_fifo(void);
 
 #endif

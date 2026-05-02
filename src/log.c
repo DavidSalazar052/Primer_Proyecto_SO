@@ -17,7 +17,7 @@ void inicializar_log(void) {
         exit(EXIT_FAILURE);
     }
 
-    fprintf(archivo, "===== LOG DE OPERACIONES - FIFO =====\n");
+    fprintf(archivo, "===== Log de Operaciones - FIFO =====\n");
     fclose(archivo);
 }
 

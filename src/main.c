@@ -1,6 +1,6 @@
 #include "terminal.h"
 
 int main(void) {
-    ejecutar_fifo_terminal();
+    ejecutar_fifo();
     return 0;
 }

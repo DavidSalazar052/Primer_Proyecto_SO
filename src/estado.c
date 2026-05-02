@@ -24,6 +24,6 @@ void cambiar_estado(Camion* camion, Estado nuevo_estado) {
     pthread_mutex_unlock(&mutex_control);
 
     snprintf(mensaje, sizeof(mensaje),
-             "[Camion %02d] Estado: %s", camion->id, estado_texto(nuevo_estado));
+             "[Camion -> %02d] Estado: %s", camion->id, estado_texto(nuevo_estado));
     escribir_log(mensaje);
 }

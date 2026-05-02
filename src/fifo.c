@@ -6,7 +6,7 @@
 #include "estado.h"
 #include "fifo.h"
 
-void planificar_fifo(Camion camiones[]) {
+void algoritmo_fifo(Camion camiones[]) {
     int siguiente = 0;
     int activos = 0;
     int terminados_anteriores = 0;
@@ -17,7 +17,7 @@ void planificar_fifo(Camion camiones[]) {
             cambiar_estado(&camiones[siguiente], LISTO);
 
             snprintf(mensaje, sizeof(mensaje),
-                     "[Planificador FIFO] Autoriza al Camion %02d",
+                     "[FIFO] Autoriza al Camion %02d",
                      camiones[siguiente].id);
             escribir_log(mensaje);
 

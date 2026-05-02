@@ -10,7 +10,7 @@
 #include "fifo.h"
 #include "metricas.h"
 
-void ejecutar_fifo_terminal(void) {
+void ejecutar_fifo(void) {
     Camion camiones[NUM_CAMIONES];
 
     inicializar_log();
@@ -25,15 +25,13 @@ void ejecutar_fifo_terminal(void) {
 
     clock_gettime(CLOCK_MONOTONIC, &tiempo_inicio_simulacion);
 
-    printf("\n==============================================\n");
-    printf(" TERMINAL DE CARGA AUTOMATIZADA - FIFO\n");
-    printf("==============================================\n");
+    printf("====Terminal de Carga - FIFO====\n");
 
     inicializar_camiones(camiones);
     imprimir_camiones(camiones);
 
     crear_hilos(camiones);
-    planificar_fifo(camiones);
+    algoritmo_fifo(camiones);
     unir_hilos(camiones);
     imprimir_resultados(camiones);
 

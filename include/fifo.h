@@ -3,6 +3,6 @@
 
 #include "terminal.h"
 
-void planificar_fifo(Camion camiones[]);
+void algoritmo_fifo(Camion camiones[]);
 
 #endif
